@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#d4d8ff"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#sky)"/>
+  <g fill="#7c9cff" opacity="0.25">
+    <rect x="120" y="260" width="120" height="260"/>
+    <rect x="260" y="220" width="180" height="300"/>
+    <rect x="460" y="280" width="120" height="240"/>
+    <rect x="600" y="240" width="160" height="280"/>
+    <rect x="780" y="200" width="200" height="320"/>
+    <rect x="1000" y="300" width="120" height="220"/>
+  </g>
+  <text x="60" y="620" font-size="22" fill="#4a5775">神戸・三宮エリアをイメージした抽象イラスト</text>
+</svg>

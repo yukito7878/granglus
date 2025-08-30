@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#eef3ff"/>
+  <path d="M 0 675 L 0 261 Q 120.0 261, 240 243 Q 360.0 243, 480 402 Q 600.0 402, 720 469 Q 840.0 469, 960 369 Q 1080.0 369, 1200 257 L 1200 675 Z" fill="#1f6feb" opacity="0.18"/>
+  <path d="M 0 675 L 0 263 Q 120.0 263, 240 389 Q 360.0 389, 480 508 Q 600.0 508, 720 461 Q 840.0 461, 960 302 Q 1080.0 302, 1200 293 L 1200 675 Z" fill="#7c9cff" opacity="0.2"/>
+  <text x="80" y="360" font-size="40" font-weight="800" fill="#0b1220">GranGlass Visual Kit</text>
+</svg>

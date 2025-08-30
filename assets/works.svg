@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" rx="24" fill="#fff"/>
+  <g transform="translate(60,60)">
+    <rect width="320" height="180" rx="14" fill="#d4d8ff"/>
+    <rect x="360" width="320" height="180" rx="14" fill="#9ee7d7"/>
+    <rect x="720" width="320" height="180" rx="14" fill="#7c9cff" opacity="0.4"/>
+    <rect y="220" width="320" height="180" rx="14" fill="#7c9cff" opacity="0.2"/>
+    <rect x="360" y="220" width="320" height="180" rx="14" fill="#d4d8ff"/>
+    <rect x="720" y="220" width="320" height="180" rx="14" fill="#9ee7d7"/>
+  </g>
+  <text x="60" y="540" font-size="24" font-weight="700" fill="#0b1220">実績サンプル（差し替え予定）</text>
+</svg>

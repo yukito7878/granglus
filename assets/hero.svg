@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d4d8ff"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#g1)"/>
+  <g opacity="0.9">
+    <path d="M 0 675 L 0 512 Q 120.0 512, 240 382 Q 360.0 382, 480 220 Q 600.0 220, 720 297 Q 840.0 297, 960 490 Q 1080.0 490, 1200 484 L 1200 675 Z" fill="#7c9cff" opacity="0.18"/>
+    <path d="M 0 675 L 0 357 Q 120.0 357, 240 496 Q 360.0 496, 480 459 Q 600.0 459, 720 299 Q 840.0 299, 960 218 Q 1080.0 218, 1200 374 L 1200 675 Z" fill="#1f6feb" opacity="0.16"/>
+    <path d="M 0 675 L 0 418 Q 120.0 418, 240 269 Q 360.0 269, 480 246 Q 600.0 246, 720 435 Q 840.0 435, 960 459 Q 1080.0 459, 1200 396 L 1200 675 Z" fill="#9ee7d7" opacity="0.22"/>
+  </g>
+  <g transform="translate(120,140)">
+    <rect rx="24" ry="24" width="360" height="210" fill="#fff" stroke="#7c9cff" opacity="0.9"/>
+    <g transform="translate(24,24)" fill="#0b1220">
+      <rect width="312" height="160" rx="12" fill="#d4d8ff" opacity="0.9"/>
+      <rect y="172" width="220" height="12" rx="6" fill="#7c9cff" />
+      <rect y="192" width="160" height="12" rx="6" fill="#9ee7d7" />
+    </g>
+    <g transform="translate(420,12)">
+      <circle r="70" cx="86" cy="86" fill="#1f6feb" opacity="0.9"/>
+      <rect x="48" y="58" width="80" height="56" rx="8" fill="#fff"/>
+      <rect x="58" y="66" width="60" height="40" rx="6" fill="#d4d8ff"/>
+      <circle cx="126" cy="70" r="8" fill="#7c9cff"/>
+      <circle cx="130" cy="114" r="8" fill="#7c9cff"/>
+    </g>
+  </g>
+  <text x="120" y="520" font-family="system-ui, 'Noto Sans JP', sans-serif" font-size="44" font-weight="800" fill="#0b1220">GranGlass — Video Creative</text>
+  <text x="120" y="560" font-size="20" fill="#4a5775">SNS動画編集 / 企業PR / 採用 / プロモーション</text>
+</svg>
