@@ -36,7 +36,7 @@ img {
 	display: block
 }
 
-.flow_img{
+.flow_img {
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
@@ -46,6 +46,15 @@ img {
 	margin-inline: auto
 }
 
+/* 既存: .nav, .logo, .nav ul などはそのまま */
+
+.nav {
+	position: relative;
+}
+
+/* ==============================
+   ヘッダー・ナビゲーション
+============================== */
 header.site-header {
 	position: sticky;
 	top: 0;
@@ -59,7 +68,7 @@ header.site-header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 12px 0
+	padding: 12px 0;
 }
 
 .logo {
@@ -67,7 +76,7 @@ header.site-header {
 	align-items: center;
 	gap: 12px;
 	font-weight: 800;
-	letter-spacing: .5px
+	letter-spacing: .5px;
 }
 
 .logo .mark {
@@ -75,20 +84,126 @@ header.site-header {
 	height: 36px;
 	border-radius: 12px;
 	background: linear-gradient(135deg, var(--brand), var(--brand-2));
-	box-shadow: var(--shadow)
+	box-shadow: var(--shadow);
+	color: #fff;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	/* 水平中央 */
+	align-items: center;
+	/* 垂直中央 */
 }
 
 .nav a {
 	color: var(--ink);
-	font-weight: 600
+	font-weight: 600;
+	text-decoration: none;
 }
 
+/* PC用: ulをflex */
 .nav ul {
 	display: flex;
 	gap: 18px;
 	list-style: none;
 	padding: 0;
-	margin: 0
+	margin: 0;
+}
+
+/* ==============================
+   ハンバーガーメニュー
+============================== */
+.nav-toggle {
+	display: none;
+	/* PCでは非表示 */
+	width: 40px;
+	height: 40px;
+	border: 0;
+	border-radius: 10px;
+	background: #fff;
+	box-shadow: var(--shadow);
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.nav-toggle .bar {
+	display: block;
+	width: 22px;
+	height: 2px;
+	background: #0b1220;
+	margin: 4px auto;
+	transition: transform .25s ease, opacity .2s ease;
+}
+
+/* --- モバイルレイアウト --- */
+@media (max-width: 920px) {
+
+	.nav ul {
+		/* モバイルでは一旦消す */
+		display: none;
+		position: absolute;
+		top: 64px;
+		right: 0;
+		width: min(88vw, 320px);
+		background: #fff;
+		border: 1px solid #e8edf5;
+		border-radius: 16px;
+		box-shadow: var(--shadow);
+		padding: 12px;
+		flex-direction: column;
+		gap: 6px;
+	}
+
+	.nav ul.show {
+		display: flex;
+	}
+
+	.nav-toggle {
+		display: inline-flex;
+	}
+
+	.nav-links {
+		position: absolute;
+		top: 64px;
+		right: 0;
+		width: min(88vw, 320px);
+		background: #fff;
+		border: 1px solid #e8edf5;
+		border-radius: 16px;
+		box-shadow: var(--shadow);
+		padding: 12px;
+		margin: 0;
+		display: none;
+		flex-direction: column;
+		gap: 6px;
+	}
+
+	.nav-links.show {
+		display: flex;
+	}
+
+	.nav-links a {
+		display: block;
+		padding: 12px 10px;
+		border-radius: 10px;
+	}
+
+	.nav-links a:hover {
+		background: #f6f9ff;
+	}
+
+	/* トグルボタンの「×」アニメーション */
+	.nav-toggle.active .bar:nth-child(1) {
+		transform: translateY(6px) rotate(45deg);
+	}
+
+	.nav-toggle.active .bar:nth-child(2) {
+		opacity: 0;
+	}
+
+	.nav-toggle.active .bar:nth-child(3) {
+		transform: translateY(-6px) rotate(-45deg);
+	}
 }
 
 .btn {
@@ -293,7 +408,7 @@ ul.clean li:before {
 	font-weight: 800
 }
 
-.step_title{
+.step_title {
 	font-weight: bold;
 	font-size: 15px;
 }

@@ -7,23 +7,36 @@
 	<title>合同会社グラングラス | 映像制作・SNS動画編集</title>
 	<meta name="description" content="神戸発の動画制作会社。業界最安値クラスのSNS動画編集サブスクと、企業PR/採用/商品紹介などの映像制作を提供。" />
 	<link rel="stylesheet" href="styles.css" />
+
+	<!-- ▼ ファビコン設定 ▼ -->
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon.png">
+	<meta name="theme-color" content="#1f6feb">
 </head>
 
 <body>
 	<header class="site-header">
 		<nav class="container nav">
 			<a href="#" class="logo">
-				<span class="mark"></span>
+				<span class="mark">G</span>
 				<span>グラングラス</span>
 			</a>
-			<ul>
+
+			<!-- ハンバーガーボタン -->
+			<button class="nav-toggle" aria-label="メニュー" aria-expanded="false" aria-controls="primary-nav">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</button>
+
+			<!-- ulには show を最初から付けない！ -->
+			<ul id="primary-nav" class="nav-links">
 				<li><a href="#services">サービス</a></li>
 				<li><a href="#pricing">料金</a></li>
 				<li><a href="#flow">流れ</a></li>
 				<li><a href="#company">会社情報</a></li>
 				<li><a href="#contact">お問い合わせ</a></li>
 			</ul>
-			<!--			<a class="btn" href="#docs">資料</a>-->
 		</nav>
 	</header>
 
@@ -64,7 +77,7 @@
 
 	<section id="services" class="section container">
 		<h2 class="reveal">提供サービス</h2>
-		<p class="sub reveal">PDF「提供サービスプラン」「事業計画書」に基づき、下記の領域をカバーします。</p>
+		<p class="sub reveal">下記サービスを主体として事業を展開しています。</p>
 		<div class="cards">
 			<article class="card reveal">
 				<img src="img/SNS動画編集.png" alt="SNS動画編集" />
@@ -87,7 +100,7 @@
 
 	<section id="pricing" class="section container">
 		<h2 class="reveal">料金プラン（SNS動画編集 サブスク）</h2>
-		<p class="sub reveal">PDFに記載の内容を反映。未確定の細目は追加確認の上で更新します。</p>
+		<p class="sub reveal">その他カスタムプランも対応しています。お気軽にご相談ください。</p>
 		<div class="pricing">
 			<article class="plan reveal">
 				<div class="hd">
@@ -231,7 +244,7 @@
 
 	<section id="contact" class="section container">
 		<h2 class="reveal">お問い合わせ</h2>
-		<p class="sub reveal">静的サイトのため、送信時はメールアプリが立ち上がります。担当が確認し次第ご返信します。</p>
+		<p class="sub reveal">送信時はメールアプリが立ち上がります。担当が確認し次第ご返信します。</p>
 		<form class="form reveal" onsubmit="return sendMail(event)">
 			<div class="row"><label>お名前</label><input required name="name" placeholder="山田 太郎" /></div>
 			<div class="row"><label>メール</label><input required type="email" name="email"
